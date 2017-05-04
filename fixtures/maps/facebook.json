@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "name": "Facebook Login (BitScoop Social Login Demo)",
+  "url": "https://graph.facebook.com",
+
+  "auth": {
+    "type": "oauth2",
+    "redirect_url": "***INSERT INVOKE URL HERE***/complete",
+    "authorization_url": "https://www.facebook.com/dialog/oauth",
+    "access_token": "https://graph.facebook.com/oauth/access_token",
+
+    "signature": "parameter",
+
+    "auth_key": "***INSERT YOUR AUTH KEY HERE***",
+    "auth_secret": "***INSERT YOUR AUTH SECRET HERE***"
+  },
+
+  "meta": {
+    "uniqueness_location": "id",
+
+    "endpoint": {
+      "method": "GET",
+      "route": {
+        "data": "",
+        "path": "/me"
+      },
+
+      "model": {
+        "key": "id",
+        "fields": {
+          "id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
