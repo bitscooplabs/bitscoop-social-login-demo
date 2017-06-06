@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "author": "BitScoop Labs, Inc.",
-  "scripts": {
-    "preinstall": "rm -f node_modules/bitscoop-social-login-demo",
-    "postinstall": "cd node_modules && ln -s .. bitscoop-social-login-demo"
-  },
   "dependencies": {
     "bitscoop-sdk": "^0.1.0",
     "cookie": "^0.3.1",
