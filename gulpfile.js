@@ -32,7 +32,8 @@ gulp.task('bundle', function() {
 	return gulp.src([
 		'src/**'
 	], {
-		base: 'src'
+		base: 'src',
+		nodir: true
 	})
 		.pipe(rename(function(path) {
 			path.dirname = path.dirname.replace(renameExpression, pkg.name);
