@@ -4,7 +4,7 @@
   "private": true,
   "author": "BitScoop Labs, Inc.",
   "dependencies": {
-    "bitscoop-sdk": "^0.1.0",
+    "bitscoop-sdk": "^0.2.0",
     "cookie": "^0.3.1",
     "http-errors": "^1.6.1",
     "humanparser": "^1.1.1",
